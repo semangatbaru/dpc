@@ -45,95 +45,77 @@
         <!-- Post -->
         <section class="bg0 p-t-70">
             <div class="container">
-                
+                <div class="row justify-content-center">
                     
                     
                     <div class="tab01 p-b-20">
                     <!-- baru -->
-                        
-                        <div class="col-md-10 col-lg-12 p-b-20">    
+                        <div class="tab01-head how2 how2-cl1 bocl12 flex-s-c m-r-10 m-r-0-sr991">
+                            <h3 class="f1-m-2 cl3 tab01-title">
+                                Berita
+                            </h3>
+    
+                                    <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
                             
-								<?php 
+                            </ul>
+    
+                            <!--  -->
+                            <a href="<?php echo site_url('Welcome/beritaall') ?>" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
+                                View all
+                                <i class="fs-12 m-l-5 fa fa-caret-right"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-10 col-lg-12 p-b-20">    
+                            <div class="row p-t-35">
+                                <?php 
                                     $no = 1;
-                                    foreach($berita as $wa){ 
+                                    foreach($beritaall as $wa){ 
                                 ?>
-								<div class="tab-content p-t-35">
-								<!-- - -->
-								<div class="tab-pane fade show active" id="tab1-1" role="tabpanel">
-									<div class="row">
-										<div class="col-sm-6 p-r-25 p-r-15-sr991">
-											<!-- Item post -->	
-											<div class="m-b-30">
-												<a href="" class="wrap-pic-w hov1 trans-03">
-													<img src="<?php  echo base_url('../beritadong/gambar/'.$wa['gambar']) ?>" alt="IMG">
-												</a>
-                                                <div class="size-w-2">
-													<h5 class="p-b-5">
-														<a href="" class="f1-s-5 cl3 hov-cl10 trans-03">
-                                                        <?php echo date("d-m-Y", strtotime($wa['tanggal'])) ?>, Oleh
-														<?php echo $wa['penulis'] ?>
-														</a>
-													</h5>
-												</div>
-
-												<!-- <div class="p-t-20">
-													<h5 class="p-b-5">
-														<a href="" class="f1-m-3 cl2 hov-cl10 trans-03">
-															<?php echo $wa['penulis'] ?>
-														</a>
-													</h5>
-
-													
-												</div> -->
-											</div>
-										</div>
-
-										<div class="col-sm-6 p-r-25 p-r-15-sr991">
-											<!-- Item post -->	
-											<div class="flex-wr-sb-s m-b-30">
-
-												
-                                                <div class="p-t-20">
-													<h5 class="p-b-5">
-														<a href="" class="f1-m-3 cl2 hov-cl10 trans-03">
-															<?php echo $wa['judul'] ?>
-														</a>
-													</h5>
-
-													
-												</div>
-											</div>
-										</div>
-                                        <div class="col-sm-12 p-r-25 p-r-15-sr991">
-                                            <div class="flex-wr-sb-s m-b-30">
-
-												
-                                                <div class="p-t-20">
-                                                    <h5 class="p-b-5">
-                                                        <span href="" class="f1-s-7 size-w-3  ">
-                                                            
-                                                                <?php echo $wa['deskripsi'] ?>
-                                                            
-                                                        </span>
-                                                    </h5>
-
-                                                
-                                                </div>
-                                            </div>
+                                <div class="col-sm-3">
+                                    <!-- Item latest -->	
+                                    <div class="m-b-45">
+                                        <a href="<?php echo base_url('Welcome/detail/'.$wa['id_berita']) ?>" class="wrap-pic-w hov1 trans-03">
+                                            <img src="<?php  echo base_url('../beritadong/gambar/'.$wa['gambar']) ?>" alt="IMG">
+                                        </a>
+        
+                                        <div class="p-t-16">
+                                            <h5 class="p-b-5">
+                                                <a href="<?php echo base_url('Welcome/detail/'.$wa['id_berita']) ?>" class="f1-m-3 cl2 hov-cl10 trans-03">
+                                                    <?php echo $wa['judul'] ?>
+                                                </a>
+                                            </h5>
+        
+                                            <span class="cl8">
+                                                <a href="<?php echo base_url('Welcome/detail/'.$wa['id_berita']) ?>" class="f1-s-4 cl8 hov-cl10 trans-03">
+                                                    by <?php echo $wa['penulis'] ?>
+                                                </a>
+        
+                                                <span class="f1-s-3 m-rl-3">
+                                                    -
+                                                </span>
+        
+                                                <span class="f1-s-3">
+                                                <?php echo date("d-m-Y", strtotime($wa['tanggal'])) ?>
+                                                </span>
+                                            </span>
                                         </div>
-									</div>
-								</div>
-									<?php } ?>
-							</div>
+                                    </div>
+                                </div>
+                                    <?php }?>
+                                    
+                                <!--  -->
+
+                                
                             </div>
-                        
+                        </div>
                     </div>
 
                     
                     
     
                     
-            
+                </div>
                 
             </div>
         </section>

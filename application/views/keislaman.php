@@ -1,156 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+
      <?php $this->load->view('partial/head')?>
     
-</head>
-<body>
+
+    <body>
     <?php $this->load->view('partial/header')?>
-    <div class="slider-main h-800x h-sm-auto pos-relative pt-95 pb-25">
-        <div class="img-bg  bg-layer-4">
-            <img src="<?php echo base_url('assets/') ?>images/daun.jpg" alt="" width="500" height="800">
-        </div>
-        <div class="container-fluid h-100 mt-xs-50">
-        
-            <div class="row h-100">
-                <div class="col-md-1"></div>
-                <div class="col-sm-12 col-md-5 h-100 h-sm-50">
-                    <div class="dplay-tbl">
-                        <div class="dplay-tbl-cell color-white mtb-30">
-                        <h1 style="font-size:100px; font-family:'gunplay"> DPC GEMASABA JEMBER </h1>
-                            <div class="mx-w-400x">
-                                <h5><b></b></h5>
-                                <h1 class="mt-20 mb-30"><b></b></h1>
-                                <h6><a class="plr-20 btn-brdr-grey color-white" href="#"><b>Continue Reading</b></a></h6>
-                            </div><!-- mx-w-200x -->
-                        </div><!-- dplay-tbl-cell -->
-                    </div><!-- dplay-tbl -->
-                </div><!-- col-sm-6 -->
-                
-                <div class="col-sm-12 col-md-6 h-sm-50 oflow-hidden swiper-area pos-relative">          
+        <!-- Headline -->
+        <!-- <div class="container">
+            <div class="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
+                <div class="f2-s-1 p-r-30 size-w-0 m-tb-6 flex-wr-s-c">
+                    <span class="text-uppercase cl2 p-r-8">
+                        Trending Now:
+                    </span>
     
-                    <div class="abs-blr pos-sm-static">
-                        <div class="row pos-relative mt-50 all-scroll">
+                    <span class="dis-inline-block cl6 slide100-txt pos-relative size-w-0" data-in="fadeInDown" data-out="fadeOutDown">
+                        <span class="dis-inline-block slide100-txt-item animated visible-false">
+                            Interest rate angst trips up US equity bull market
+                        </span>
                         
-                            <div class="swiper-scrollbar resp"></div>
-                            <div class="col-md-10">
-                                
-                                <h5 class="mb-50 color-white"><b></b></h5>
-                                
-                                <div class="swiper-container oflow-visible" data-slide-effect="slide" data-autoheight="false" 
-                                    data-swiper-speed="500" data-swiper-margin="25" data-swiper-slides-per-view="2"
-                                    data-swiper-breakpoints="true" data-scrollbar="true" data-swiper-loop="true"
-                                    data-swpr-responsive="[1, 2, 1, 2]">
-                                    
-                                    
-                                
-                                    <div class="swiper-wrapper">
-                                        <!-- data-swiper-autoplay="1000"  -->
-                                        
-                                    </div><!-- swiper-wrapper -->
-                                </div><!-- swiper-container -->
-                                
-                            </div><!-- col-sm-6 -->
-                        </div><!-- all-scroll -->
-                    </div><!-- row -->
-                </div><!-- col-sm-6 -->
-                
-            </div><!-- row -->
-        </div><!-- container -->
-    </div><!-- slider-main -->
+                        <span class="dis-inline-block slide100-txt-item animated visible-false">
+                            Designer fashion show kicks off Variety Week
+                        </span>
     
-    
-    <section class="bg-1-white ptb-0">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-md-12 col-lg-8 ptb-50 pr-30 pr-md-15">
-                    <div class="row">
-                    
-                        <!-- START OF FIRST PARA -->
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-30">
-                            <div class="card h-100 bg-white">
-                                
-                            </div><!-- card -->
-                        </div><!-- col-lg-4 col-md-6 -->
-                        
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-30">
-                            <div class="card h-100 bg-white">
-                               
-                            </div><!-- card -->
-                        </div><!-- col-lg-4 col-md-6 -->
-                        
-                        <div class="col-md-6 col-lg-6 col-xl-4 mb-30">
-                            <div class="card h-100 bg-white">
-                                
-                            </div><!-- card -->
-                        </div><!-- col-lg-4 col-md-6 -->
-                    
-                        <!-- END OF FIRST PARA -->
-                    </div><!-- row -->
-                    
-                    <h4 class="mb-30 mt-20 clearfix"><b>Keislaman</b></h4>
-                    
-                    <div class="row">
-                        <?php 
-                            $no = 1;
-                            foreach($keislaman as $wa){ 
-                        ?>
-                        
-                        <!-- START OF SECOND PARA -->
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 mb-30">
-                            <div class="card h-100 h-xs-500x">
-                                <div class="sided-half sided-xs-half h-100 bg-white">
-                                
-                                    <!-- SETTING IMAGE WITH bg-2 -->
-                                    <div class="s-left w-50 w-xs-100 h-100 h-xs-50 pos-relative">
-                                        
-                                            <img src="<?php echo base_url('../beritadong/gambar/'.$wa['gambar']) ?>" width="64" height="230"/>
-                                        
-                                    </div>
-                                    
-                                    <div class="s-right w-50 w-xs-100 h-xs-50">
-                                        <div class="plr-25 ptb-25 h-100">
-                                            <div class="dplay-tbl">
-                                                <div class="dplay-tbl-cell">
-                                                
-                                                    <h5 class="color-ash"><b></b></h5>
-                                                    <h2 class="mtb-10"><a href="<?php echo base_url('Welcome/detail/'.$wa['id_berita']) ?>">
-
-                                                        <b><?php echo $wa['judul'] ?></b></a></h2>
-                                                    <ul class="list-li-mr-10 color-lt-black">
-                                                        <li><i class="mr-5 font-12 ion-android-favorite-outline"><?php echo date("d-m-Y", strtotime($wa['tanggal'])) ?></i></li>
-                                                        <li><i class="mr-5 font-12 ion-ios-chatbubble-outline"></i>105</li>
-                                                    </ul>
-                                                    
-                                                </div><!-- dplay-tbl-cell -->
-                                            </div><!-- dplay-tbl -->
-                                        </div><!-- plr-25 ptb-25 -->
-                                    </div><!-- s-right -->
-                                </div><!-- sided-half -->
-                            </div><!-- card -->
-                        </div><!-- col-lg-8 col-md-12 -->
-                        <?php } ?>
-
-                       
-                    
-                        <!-- END OF THIRD PARA -->
-                    </div><!-- row -->
-                
-                    
-                   
-                <div class="col-sm-12 col-md-12  mb-30">
-                    <h6 class="text-center mt-20"><a class="btn-brdr-grey color-ash plr-30" href="#"><b>LOAD MORE</b></a></h6>
+                        <span class="dis-inline-block slide100-txt-item animated visible-false">
+                            Microsoft quisque at ipsum vel orci eleifend ultrices
+                        </span>
+                    </span>
                 </div>
-            </div><!-- row -->
-           
-    </div>
-    </section>
     
-    <!-- ##### Footer Add Area End ##### -->
-<?php $this->load->view('partial/footer')?>
-<?php $this->load->view('partial/script')?>
+                <div class="pos-relative size-a-2 bo-1-rad-22 of-hidden bocl11 m-tb-6">
+                    <input class="f1-s-1 cl6 plh9 s-full p-l-25 p-r-45" type="text" name="search" placeholder="Search">
+                    <button class="flex-c-c size-a-1 ab-t-r fs-20 cl2 hov-cl10 trans-03">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+            
+        <!-- Feature post -->
+        <section class="bg0">
+            
+        </section>
+    
+        <!-- Post -->
+        <section class="bg0 p-t-70">
+            <div class="container">
+                <div class="row justify-content-center">
+                    
+                    
+                    <div class="tab01 p-b-20">
+                    <!-- baru -->
+                        <div class="tab01-head how2 how2-cl1 bocl12 flex-s-c m-r-10 m-r-0-sr991">
+                            <h3 class="f1-m-2 cl3 tab01-title">
+                                Keislaman
+                            </h3>
+    
+                                    <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                            
+                            </ul>
+    
+                            <!--  -->
+                            <a href="<?php echo site_url('Welcome/keislamanall') ?>" class="tab01-link f1-s-1 cl9 hov-cl10 trans-03">
+                                View all
+                                <i class="fs-12 m-l-5 fa fa-caret-right"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-10 col-lg-12 p-b-20">    
+                            <div class="row p-t-35">
+                                <?php 
+                                    $no = 1;
+                                    foreach($keislamanall as $wa){ 
+                                ?>
+                                <div class="col-sm-3">
+                                    <!-- Item latest -->	
+                                    <div class="m-b-45">
+                                        <a href="<?php echo base_url('Welcome/detail/'.$wa['id_berita']) ?>" class="wrap-pic-w hov1 trans-03">
+                                            <img src="<?php  echo base_url('../beritadong/gambar/'.$wa['gambar']) ?>" alt="IMG">
+                                        </a>
+        
+                                        <div class="p-t-16">
+                                            <h5 class="p-b-5">
+                                                <a href="<?php echo base_url('Welcome/detail/'.$wa['id_berita']) ?>" class="f1-m-3 cl2 hov-cl10 trans-03">
+                                                    <?php echo $wa['judul'] ?>
+                                                </a>
+                                            </h5>
+        
+                                            <span class="cl8">
+                                                <a href="<?php echo base_url('Welcome/detail/'.$wa['id_berita']) ?>" class="f1-s-4 cl8 hov-cl10 trans-03">
+                                                    by <?php echo $wa['penulis'] ?>
+                                                </a>
+        
+                                                <span class="f1-s-3 m-rl-3">
+                                                    -
+                                                </span>
+        
+                                                <span class="f1-s-3">
+                                                <?php echo date("d-m-Y", strtotime($wa['tanggal'])) ?>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <?php }?>
+                                    
+                                <!--  -->
 
+                                
+                            </div>
+                        </div>
+                    </div>
 
-</body>
-</html>
+                    
+                    
+    
+                    
+                </div>
+                
+            </div>
+        </section>
+    
+        
+    
+        <!-- Latest -->
+        
+    <?php $this->load->view('partial/footer')?>
+    <?php $this->load->view('partial/top')?>
+    
+    <div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document" data-dismiss="modal">
+                <div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+    
+                <div class="wrap-video-mo-01">
+                    <div class="video-mo-01">
+                        <iframe src="<?php echo base_url('assets/') ?>https://www.youtube.com/embed/wJnBTPUQS5A?rel=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <?php $this->load->view('partial/script')?>
+    
+    
+    </body>
+    </html>
