@@ -187,13 +187,11 @@
 			<div class="wrap-logo container">
 				<!-- Logo desktop -->		
 				<div class="logo">
-					<a href="index.html"><img src="<?php echo base_url('assets/') ?>images/icons/logo-01.png" alt="LOGO"></a>
+					<a href="index.html"><img src="<?php echo base_url('assets/') ?>images/fixwes.png" alt="LOGO"></a>
 				</div>	
 
 				<!-- Banner -->
-				<div class="banner-header">
-					<a href="#"><img src="<?php echo base_url('assets/') ?>images/banner-01.jpg" alt="IMG"></a>
-				</div>
+				
 			</div>	
 			
 			<!--  -->

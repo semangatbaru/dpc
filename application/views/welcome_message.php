@@ -189,7 +189,7 @@
 	<div class="container">
 		<div class="flex-c-c">
 			<a href="#">
-				<img class="max-w-full" src="<?php echo base_url('assets/') ?>images/banner-01.jpg" alt="IMG">
+				<!-- <img class="max-w-full" src="<?php echo base_url('assets/') ?>images/banner-01.jpg" alt="IMG"> -->
 			</a>
 		</div>
 	</div>
@@ -1194,18 +1194,7 @@
 <?php $this->load->view('partial/footer')?>
 <?php $this->load->view('partial/top')?>
 
-<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog" role="document" data-dismiss="modal">
-			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
 
-			<div class="wrap-video-mo-01">
-				<div class="video-mo-01">
-					<iframe src="<?php echo base_url('assets/') ?>https://www.youtube.com/embed/wJnBTPUQS5A?rel=0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-    
 <?php $this->load->view('partial/script')?>
 
 
