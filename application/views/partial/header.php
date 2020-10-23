@@ -65,7 +65,7 @@
 			<div class="wrap-header-mobile">
 				<!-- Logo moblie -->		
 				<div class="logo-mobile">
-					<a href="index.html"><img src="<?php echo base_url('assets/') ?>images/icons/logo-01.png" alt="IMG-LOGO"></a>
+					<a href="index.html"><img src="<?php echo base_url('assets/') ?>images/icons/logo-03.png" alt="IMG-LOGO"></a>
 				</div>
 
 				<!-- Button show menu -->
@@ -187,7 +187,7 @@
 			<div class="wrap-logo container">
 				<!-- Logo desktop -->		
 				<div class="logo">
-					<a href="index.html"><img src="<?php echo base_url('assets/') ?>images/icons/logo-01.png" alt="LOGO"></a>
+					<a href="index.html"><img src="<?php echo base_url('assets/') ?>images/icons/logo-03.png" alt="LOGO"></a>
 				</div>	
 
 				<!-- Banner -->
@@ -202,7 +202,7 @@
 					<!-- Menu desktop -->
 					<nav class="menu-desktop">
 						<a class="logo-stick" href="index.html">
-							<img src="<?php echo base_url('assets/') ?>images/icons/logo-01.png" alt="LOGO">
+							<img src="<?php echo base_url('assets/') ?>images/icons/logo-03.png" alt="LOGO">
 						</a>
 
 						<ul class="main-menu">
